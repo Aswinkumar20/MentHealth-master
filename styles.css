@@ -1,0 +1,15 @@
+.nav{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: chocolate;
+}
+
+.nav-link{
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 2rem 1rem;
+}
+
+.nav-link a{
+    color: white;
+}
