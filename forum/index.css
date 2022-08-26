@@ -2,6 +2,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    /* padding: 0; */
 }
 
 html{
@@ -27,6 +29,45 @@ h1{
 /* home page */
 
 
+/* top nav bar */
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+    padding: 24px;
+    /* margin: 7px; */
+}
+
+.nav-logo{
+    padding-right: 20%;
+}
+
+.navbar-list ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-list ul li{
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.navbar-list ul li a{
+    font-size: 23px;
+    color: whitesmoke;
+    padding: 5px;
+    margin: 10px;
+}
+
+.navbar-list ul li a:hover{
+    cursor: pointer;
+    /* color: violet; */
+    opacity: 0.6;
+}
+/* end of top nav bar */
 
 
 
@@ -35,9 +76,9 @@ h1{
 
 /* top page */
 .top-page, .terms{
-    background-color: #fefefe;
-    padding: 10px;
-    margin: 7px;
+    background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+    padding: 24px;
+    margin-top: 7px;
     border-radius: 05px;
 }
 .top-page ul{
@@ -47,10 +88,11 @@ h1{
 }
 .top-page ul li a{
     font-family: "Open Sans", sans-serif;
-    font-size: 1.2rem;
-    color: red;
+    font-size: 1rem;
+    color: whitesmoke;
     padding: 05px;
     margin: 10px;
+    font-weight: bolder;
 }
 
 .top-page ul li a:hover{
@@ -65,7 +107,7 @@ h1{
 
 .primary-navigation ul li {
     list-style: none;
-    /* margin: 0 auto; */
+    margin: 16px;
     border-left: 2px solid white;
     display: inline-block;
     padding: 0 30px;
@@ -96,9 +138,6 @@ a {
 a:hover {
     color: whitesmoke;
 }
-ul li ul li a {
-    transition: all 0.5s ease;
-}
 
 /* end of terms and conditions */
 
@@ -128,7 +167,8 @@ ul li ul li a {
 
 .left-top-box ul li{
     list-style-image: linear-gradient(to left bottom, rgb(232, 218, 218), rgb(140, 154, 13));
-    margin-top: 05px;
+    margin-left: 5px;
+    padding: 5px;
     max-width: fit-content;
 }
 
@@ -340,6 +380,124 @@ footer{
 /* end of forum info footer */
 
 
+/* accordian */
+
+section {
+    margin: 2%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .accodian-container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .accordion-item{
+    background-color: #000000;
+    border-radius: .4rem;
+  }
+  
+  .accordion-item hr{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .accordion-link{
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .accordion-link h1{
+    font-weight:700;
+    font-size: 1.2rem;
+  }
+  
+  .accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+    
+  }
+  
+  .accordion-link ul{
+    display:flex;
+    align-items: flex-end;
+    list-style-type: none;
+    margin-left: 25px;
+  }
+  
+  .accordion-link li{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0 0 1px 5px;
+  }
+  
+  .accordion-link div{
+    display: flex;
+  }
+  
+  .accordion-link .ion-md-arrow-down{
+    display: none;
+  }
+  
+  .answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    transition: max-height 650ms;
+  }
+  
+  
+  
+  .answer p{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 1rem;
+    
+  }
+  
+  .accordion-item:target .answer{
+    max-height: 20rem;
+  }
+  
+  .accordion-item:target .accordion-link .ion-md-arrow-forward{
+    display: none
+  }
+  
+  .accordion-item:target .accordion-link .ion-md-arrow-down{
+    display: block;
+  }
+/* end 0f accordian */
+
+
+/* page footer */
+
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+}
+
+footer .left-content{
+    /* justify-content: center;
+    align-items: center; */
+}
+
+footer .right-content{
+    margin-left: 31%;
+}
+
+/* end of page footer */
 
 /* end of home page */
 
