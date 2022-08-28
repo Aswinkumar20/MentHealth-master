@@ -37,12 +37,12 @@ h1{
     justify-content: center;
     align-items: center;
     background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
-    padding: 24px;
+    /* padding: 24px; */
     /* margin: 7px; */
 }
 
 .nav-logo{
-    padding-right: 20%;
+    padding-right: 40%;
 }
 
 .navbar-list ul{
@@ -67,6 +67,7 @@ h1{
     /* color: violet; */
     opacity: 0.6;
 }
+
 /* end of top nav bar */
 
 
@@ -137,6 +138,10 @@ a {
 }
 a:hover {
     color: whitesmoke;
+}
+
+@media screen and (min-width: 576px){
+    
 }
 
 /* end of terms and conditions */
@@ -292,6 +297,8 @@ a:hover {
 /* for responsive */
 
 /* for mobile */
+
+
 @media screen and(max-width: 460px) {
     .container{
         margin: 10px;
@@ -418,8 +425,8 @@ section {
   }
   
   .accordion-link h1{
-    font-weight:700;
-    font-size: 1.2rem;
+    font-weight:870;
+    font-size: 1.26rem;
   }
   
   .accordion-link i{
@@ -436,7 +443,7 @@ section {
   }
   
   .accordion-link li{
-    font-size: 17px;
+    font-size: 19px;
     color: rgba(255, 255, 255, 0.4);
     padding: 0 0 1px 5px;
   }
@@ -461,7 +468,7 @@ section {
   
   .answer p{
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.18rem;
     padding: 1rem;
     
   }
@@ -486,12 +493,9 @@ footer{
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 40px;
+    
 }
 
-footer .left-content{
-    /* justify-content: center;
-    align-items: center; */
-}
 
 footer .right-content{
     margin-left: 31%;
