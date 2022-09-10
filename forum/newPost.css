@@ -1,0 +1,74 @@
+
+
+header{
+    font-size: 24px;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar{
+    font-size: 1.5em;
+}
+
+
+body{
+    margin-top:20px;
+    background-color:#e9ebee;
+}
+
+.form-block .row{
+    margin-top: 09%;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.form-block .row> div{
+    font-size: 25px;
+}
+
+.dropdown select{
+    border-radius: 10px;
+}
+
+
+
+.form-group .form-input {
+    font-size: 29px;
+    line-height: 50px;
+    font-weight: 500;
+    color:black;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #edeff2;
+    border-radius: 3px;
+}
+
+.form-group.fl_icon .form-input {
+    padding-left: 70px;
+}
+
+.form-group textarea.form-input {
+    height: 150px;
+}
+
+.form-block a{
+    
+    font-size: 23px;
+    font-weight: 600;
+    background-color: #0AAAA0;
+}
+
+.form-block a:hover{
+    background-color: white;
+    color: #0AAAA0;
+}
+
+
+
+
+
+
+

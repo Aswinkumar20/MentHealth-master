@@ -3,95 +3,64 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    /* padding: 0; */
 }
 
 html{
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(0, 0,0);
-    color: #fefefe;
 }
 
 a{
-    color: #FF0042;
     font-weight: bolder;
     text-decoration: none;
 }
 
-h1{
+
+h2{
     font-size:22px;
     font-weight: bolder;
 }
+
+
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: end;
+    padding-right: 17px;
+}
+/* end of header */
+
+
 /* end of global styling */
+
 
 
 /* home page */
 
 
-/* top nav bar */
-
-.nav-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
-    /* padding: 24px; */
-    /* margin: 7px; */
-}
-
-.nav-logo{
-    padding-right: 40%;
-}
-
-.navbar-list ul{
-    display: flex;
-    list-style: none;
-}
-
-.navbar-list ul li{
-    padding-left: 20px;
-    font-weight: bold;
-}
-
-.navbar-list ul li a{
-    font-size: 23px;
-    color: whitesmoke;
-    padding: 5px;
-    margin: 10px;
-}
-
-.navbar-list ul li a:hover{
-    cursor: pointer;
-    /* color: violet; */
-    opacity: 0.6;
-}
-
-/* end of top nav bar */
-
-
-
-
-
-
 /* top page */
 .top-page, .terms{
-    background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
-    padding: 24px;
-    margin-top: 7px;
-    border-radius: 05px;
+    /* background-color: grey; */
+    background-color: #0AAAA0;
+    /* padding: 10px; */
+    /* margin-top: 7px; */
+    border-radius: 5px;
 }
 .top-page ul{
+    padding: 15px;
     display: flex;
     justify-content: right;
     list-style-type: none;
+    margin-bottom: 0px;
 }
 .top-page ul li a{
     font-family: "Open Sans", sans-serif;
+    text-decoration: none;
     font-size: 1rem;
-    color: whitesmoke;
-    padding: 05px;
+    color: #fff;
+    padding: 5px;
     margin: 10px;
     font-weight: bolder;
 }
@@ -99,17 +68,20 @@ h1{
 .top-page ul li a:hover{
     cursor: pointer;
     /* color: violet; */
-    opacity: 0.6;
+    opacity: 0.7;
 }
 /* end of top page */
 
 
 /* terms and condition */
 
+.primary-navigation{
+    margin-top: 4px;
+    background-color: #0AAAA0;
+}
 .primary-navigation ul li {
     list-style: none;
     margin: 16px;
-    border-left: 2px solid white;
     display: inline-block;
     padding: 0 30px;
     position: relative;
@@ -117,10 +89,11 @@ h1{
     text-align: center;
 }
 nav.primary-navigation li a {
-    color: red;
+    text-decoration: none;
+    color: white;
 }
 nav.primary-navigation li a:hover {
-    color: white;
+    opacity: 0.7;
 }
 nav.primary-navigation li:hover {
     cursor: pointer;
@@ -130,15 +103,45 @@ nav.primary-navigation li:hover {
 {
     visibility: visible;
     opacity: 1;
-    box-shadow: 0px 3px 5px -1px #ccc;
+    box-shadow: 0px 3px 5px -1px rgb(111, 71, 71);
 }
 
-a {
+
+
+
+/* new post */
+
+.new-post{
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    border: #ccc 1.6px dotted;
+    /* background-image: linear-gradient(to left  to right(blue), red); */
+}
+
+.new-post a{
+    color: #0AAAA0;
     text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
-a:hover {
-    color: whitesmoke;
+
+nav ul .new-post{
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+
 }
+
+
+nav ul .new-post a:hover{
+    opacity: 0.7;
+    color: #0AAAA0;
+}
+
+
+/* end of new post */
+
 
 @media screen and (min-width: 576px){
     
@@ -150,9 +153,12 @@ a:hover {
 /* main page left box content */
 
 .left-box-content{
-    position: relative;
-    top: 22px;
-    margin-right: 20px;
+    margin: 22px 8px 0 0;
+}
+
+.left-top-box h2{
+    color: #030202;
+    font-size: xx-large;
 }
 
 .left-top-box{
@@ -160,7 +166,7 @@ a:hover {
     border-radius: 10px;
     padding: 20px;
     /* border-style:ridge; */
-    background-color:#111314;
+    background-color: #66BFBF;
 }
 
 .left-top-box hr{
@@ -180,18 +186,35 @@ a:hover {
 .left-top-box ul li a{
     /* margin: 10px; */
     font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.left-top-box ul li a:hover{
+    text-decoration: underline;
 }
 
 .left-down-box{
     border-radius: 8px;
     padding: 20px;
     margin:50px 0px;
-    background-color:#111314;
+    background-color:#66BFBF;
+}
+
+.left-down-box h2{
+    color: #030202;
+    font-size: xx-large;
 }
 
 .left-down-box li{
     margin-top: 05px;
     font-size: 1.1rem;
+    color: white;
+}
+
+
+.left-down-box ol li a{
+    color: whitesmoke;
 }
 
 .left-down-box hr{
@@ -227,29 +250,12 @@ a:hover {
 /* end of search box */
 
 
-/* new post */
-
-.new-post{
-    float: right;
-    padding: 10px;
-    box-sizing: border-box;
-    border: #ccc 1.4px dotted;
-    background-image: linear-gradient(to left  to right(blue), red);
-}
-
-.new-post a{
-    color: #fefefe;
-    text-transform: uppercase;
-}
 
 
-/* end of new post */
-
-.container{
+.main-container{
     display: grid;
     grid-template-columns: 20% 80%;
-    margin: 20px;
-    padding: 20px;
+    margin: 7px;
 }
 
 .subforum{
@@ -257,14 +263,29 @@ a:hover {
 }
 
 .subforum-title{
-    background-color: #292b2e;
+    background-color:#0AAAA0;
     padding: 5px;
     border-radius: 5px;
     margin: 4px; 
 }
 
+.subforum-title h1{
+    font-size:xx-large;
+    margin-bottom: 0;
+}
+
 .subforum-description{
     margin-block: 0;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding-left: 15px;
+    line-height: 1.2;
+}
+
+
+.subforum-description h1 a{
+    color:whitesmoke;
+    font-size: 1.2rem;
 }
 
 .subforum-row{
@@ -273,10 +294,10 @@ a:hover {
 }
 
 .subforum-column{
-    padding: 10px;
     margin: 4px;
     border-radius: 5px;
-    background-color: #111314;
+    background-color: #66BFBF;
+    font-weight: 600;
 }
 
 .center{
@@ -293,16 +314,27 @@ a:hover {
     display: none;
 }
 
+.subforum-info a{
+    color: #E0E0E0;
+}
+
 
 /* for responsive */
+
+
+/* @media screen and (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 1720px;
+    }
+} */
 
 /* for mobile */
 
 
-@media screen and(max-width: 460px) {
-    .container{
-        margin: 10px;
-        padding: 10px;
+@media (max-width: 460px) {
+    .main-container{
+        /* margin: 10px; */
+        /* padding: 10px; */
         display: flex;
         /* grid-template-rows: 1fr 1fr; */
         flex-direction: column;
@@ -329,7 +361,7 @@ a:hover {
 
 /* for tablets */
 @media screen and (min-width:460px) and (max-width: 1024px) {
-    .container{
+    .main-container{
         margin: 15px;
         padding: 15px;
         display: flex;
@@ -367,7 +399,7 @@ a:hover {
 .forum-info{
     padding: 20px;
     margin: 5px;
-    background-color:#111314 ;
+    background-color:#66BFBF;
 }
 
 .forum-info span{
@@ -388,16 +420,19 @@ footer{
 
 
 /* accordian */
-
+.FAQ-title .heading{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
 section {
     margin: 2%;
-    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .accodian-container{
+  .accordion-container{
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
@@ -405,7 +440,7 @@ section {
   }
   
   .accordion-item{
-    background-color: #000000;
+    background-color:#66BFBF;
     border-radius: .4rem;
   }
   
@@ -416,7 +451,7 @@ section {
   .accordion-link{
     color: rgba(255,255,255,.8);
     text-decoration: none;
-    background-color: #000000;
+    background-color:#0AAAA0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -460,7 +495,7 @@ section {
     max-height: 0;
     overflow: hidden;
     position: relative;
-    background-color: #000;
+    background-color:#2c2c2c;
     transition: max-height 650ms;
   }
   
@@ -483,6 +518,10 @@ section {
   
   .accordion-item:target .accordion-link .ion-md-arrow-down{
     display: block;
+  }
+
+  .accordion-link :hover{
+    color: black;
   }
 /* end 0f accordian */
 
@@ -529,11 +568,11 @@ footer .right-content{
 }
 
 .navigate a{
-    color: #fff;
+    color: black;
 }
 
 .navigate a:hover{
-    color: #ff0042;
+    color:#0AAAA0;
     font-weight: bolder;
 }
 /* pagination */
@@ -544,7 +583,7 @@ footer .right-content{
 .table-head div{
     padding: 5px;
     margin: 2px;
-    background-color: #2c2c2c;
+    background-color:#0AAAA0;
     font-weight: bold;
 }
 
@@ -553,7 +592,7 @@ footer .right-content{
 }
 
 .table-head .subjects{
-    flex: 70%;
+    flex: 75%;
 }
 
 .table-head .replies{
@@ -574,7 +613,7 @@ footer .right-content{
 .table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
     padding: 5px;
     margin: 2px;
-    background-color: #131415;
+    background-color:#66BFBF;
 }
 
 .table-row .status{
@@ -584,7 +623,11 @@ footer .right-content{
 }
 
 .table-row .subjects{
-    flex: 70%;
+    flex: 75%;
+}
+
+.table-row .subjects a{
+    color:#2c2c2c;
 }
 .table-row .replies{
     flex: 10%;
@@ -601,10 +644,10 @@ footer .right-content{
 }
 
 .pagination a{
-    color: #fff;
+    color: black;
     margin-inline: 5px;
     padding: 5px 10px;
-    border: solid #fff 0.5px;
+    border: solid #ccc 0.5px;
 }
 
 .pagination a:hover{
@@ -630,7 +673,7 @@ footer .right-content{
 
 .head{
     display: flex;
-    background-color: #2c2c2c;
+    background-color:#0AAAA0;
     padding: 5px;
     font-weight: bold;
     font-size: 24px;
@@ -646,7 +689,7 @@ footer .right-content{
 
 .body{
     display: flex;
-    background-color: #131415;
+    background-color:#66BFBF;
     padding: 10px;
     margin-top: 5px;
 }
@@ -688,16 +731,22 @@ footer .right-content{
     font-size: 1.4rem;
 }
 
+
+
 .comment-area input{
     float: right;
     padding: 10px;
     font-size: 25px;
     border-radius: 10px;
     cursor: pointer;
+    color:#0AAAA0;
+    background-color: #fff;
 }
 
 .comment-area input:hover{
-    border: solid 1px #000000;
+    border: dotted 1px #0AAAA0;
+    color: black;
+    background-color: #66BFBF;
 }
 
 /* end of comment input area */
