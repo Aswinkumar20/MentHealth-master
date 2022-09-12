@@ -145,13 +145,14 @@
                 <div class="row1 col-xs-12 col-sm-6">
                     <div class="form-group fl_icon">
                         <div class="icon"><i class="fa fa-user"></i></div>
+                        <label for="name" style="font-weight: 700;">Name:</label>
                         <input class="form-input" type="text" placeholder="Your name">
                     </div>
                 </div>
 
                 <div class="dropdown">
                     <div class="icon"><i class="fa fa-database"></i></div>
-                    <label for="membership">Category: </label>
+                    <label for="categories" style="font-weight:700;">Category: </label>
                     <Select name="categories" id="categories">
                       <option value="General">General</option>
                       <option value="Depression">Depression</option>
@@ -162,13 +163,37 @@
                       <option value="LGBTQ+">LGBTQ+</option>
                     </Select>
                 </div>
+
+                <div class="row1 col-xs-12 col-md-9">
+                  <div class="form-group fl_icon">
+                      <div class="icon"><i class="fa fa-header"></i></div>
+                      <label for="heading" style="font-weight:700;">Heading:</label>
+                      <input class="form-input" type="text" placeholder="Title of the Post">
+                  </div>
+              </div>
+
+              <div class="dropdown">
+                <div class="icon"><i class="fa fa-smile-o"></i></div>
+                <label for="reaction" style="font-weight:700;">How you feel ? </label>
+                <Select name="reaction" id="ReactionCategories">
+                  <option value="Strange">Strange</option>
+                  <option value="Sad">Sad</option>
+                  <option value="Depression">Depression</option>
+                  <option value="Happy">Happy</option>
+                  <option value="Pregnancy">Embarassing</option>
+                </Select>
+              </div>
+              
             </div>
+
 
             <div class="col-xs-12">									
               <div class="form-group">
                   <textarea class="form-input" required="" placeholder="Your text"></textarea>
               </div>
             </div>
+
+            
 
           <a class="btn btn-primary pull-right">Post</a>
         </form>
