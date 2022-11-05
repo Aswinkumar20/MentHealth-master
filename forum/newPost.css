@@ -1,83 +1,65 @@
-
-html{
-    font-size: 11px;
-    font-family: "Montserrat", sans-serif;
+body{
+    background: -webkit-linear-gradient(right, #0AAAA0, #0e3331);
 }
 
-header{
+/* header */
+
+
+.header{
     display: flex;
     justify-content: end;
+    padding-right: 17px;
 }
+/* end of header */
 
-
-body{
-    margin-top:20px;
-    background-color:#e9ebee;
+.contact-form{
+    background: #fff;
+    margin-top: 05%;
+    margin-bottom: 5%;
+    width: 80%;
 }
-
-.form-block .row{
-    margin-top: 09%;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.contact-form .form-control{
+    border-radius:1rem;
 }
-
-.form-block .row> div{
-    font-size: 16px;
+.contact-image{
+    text-align: center;
 }
-
-.dropdown select{
-    border-radius: 10px;
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
 }
-
-
-
-.form-group .form-input {
-    font-size: 14px;
-    line-height: 50px;
-    font-weight: 500;
-    color:black;
-    width: 100%;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid #edeff2;
-    border-radius: 3px;
+.contact-form form{
+    padding: 14%;
 }
-
-.form-group.fl_icon .form-input {
-    padding-left: 70px;
+.contact-form form .row{
+    margin-bottom: -7%;
 }
-.dropdown select{
-    width: 27%;
+.contact-form h3{
+    margin-bottom: 6%;
+    margin-top: -13%;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
 }
-
-.form-group textarea.form-input {
-    height: 150px;
-}
-
-.form-block a{
-    
-    font-size: 23px;
-    font-weight: 600;
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background:#0AAAA0;
     background-color: #0AAAA0;
-}
-
-.form-block a:hover{
-    background-color: white;
-    color: #0AAAA0;
-}
-
-
-@media screen and (max-width: 460px){
-    .form-block .row{
-        grid-template-columns: 1fr 1fr;
-    }
-    
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
 }
 
 
+.textAreaBox .form-group{
+    box-shadow: 0 0 2px 1px #0e3331;
+}
 
-
-
-
+.contact-form .btnContact:hover{
+    opacity: 0.8;
+}

@@ -8,7 +8,8 @@ html{
     src: url("../fonts/aller/aller_bd.eot?#iefix") format("embedded-opentype"), url("../fonts/aller/aller_bd.woff") format("woff"), url("../fonts/aller/aller_bd.ttf") format("truetype"), url("../fonts/aller/aller_bd.svg#svgFontName") format("svg");
     /* Legacy iOS */
     font-weight: bold;
-    font-style: normal; }
+    font-style: normal; 
+  }
   
   
   .header{

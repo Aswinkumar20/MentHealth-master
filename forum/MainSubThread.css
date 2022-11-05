@@ -1,0 +1,153 @@
+/* global styling */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+h2{
+    font-size:22px;
+    font-weight: bolder;
+}
+
+
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: end;
+    padding-right: 17px;
+}
+/* end of header */
+
+
+/* end of global styling */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.top-bar{
+    padding: 15px;
+    margin: 2px;
+    background-color:#0AAAA0;
+    font-weight: bold;
+    border-radius: 05px;
+}
+
+.main{
+    margin: 2px;
+    border-radius: 5px;
+    /* background-color: #66BFBF */
+}
+
+
+.main .threadDetails{
+    background-color:#66BFBF;
+    border-radius: 05px;
+    padding: 15px;
+}
+
+.main .threadDetails .threadPassage{
+    font-size: 14px;
+}
+.main .threadDetails .bottom{
+    display: flex;
+    color: #fff;
+    font-size: 11px;
+    /* padding-left: 05px; */
+}
+
+
+.main .comments{
+    margin-top: 10px;
+    border-radius: 05px;
+    padding: 15px;
+    background-color: #66BFBF;
+}
+
+
+.timestamp{
+    padding-right: 10px;
+}
+
+
+.main .threadDetails textarea{
+    width: 70%;
+    height:auto;
+}
+
+/* comment input area */
+
+.comment-area{
+    margin-top: 10px;
+    /* background-color: blueviolet; */
+    display: none;
+}
+
+.comment-area textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+    font-size: 1.4rem;
+}
+
+
+
+.comment-area input{
+    border: black 1.2px solid;
+    padding: 07px;
+    font-size: 15px;
+    border-radius: 06px;
+    cursor: pointer;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.comment-area input:hover{
+    border: dotted 1px #0AAAA0;
+    color: black;
+}
+
+/* end of comment input area */
+
+
+/* upvote,downvote commentbox styling */
+.comment-Area .commentBtn{
+    display: flex;
+    flex-direction: row;
+}
+/* upvote,downvote commentbox styling */
+
+
+/* pagination */
+.pagination{
+    padding: 10px;
+    font-size: 12px;
+}
+
+.pagination a{
+    font-size: 08px;
+    color: black;
+    margin-inline: 2.8px;
+    padding: 5px 10px;
+    border: solid #ccc 0.5px;
+}
+
+.pagination a:hover{
+    opacity: 0.5;
+}
+/* end of pagination */

@@ -7,11 +7,20 @@
     <title>My forum</title>
     <link rel="stylesheet" href="newPost.css">
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/b46874c09d.js" crossorigin="anonymous"></script>
+
+
+     <!-- for textarea -->
+     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+     <!-- end for textArea -->
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -20,17 +29,17 @@
 <body>
 
      <!-- header  -->
-     <header class="header" style="background-color:#0AAAA0; color: white;;">
-        <div class="social">
-          <span>Follow Us On : </span>
-          <span class="icn">
-            <a href="https://www.facebook.com/" style="color: #fff; padding:2px;"><i class="fa-brands fa-facebook-f"></i></a>
-          </span>
-          <span class="icn">
-            <a href="https://twitter.com/login" style="color: #fff; padding: 2px;"><i class="fa-brands fa-twitter"></i></a>
-          </span>
-        </div>
-      </header>
+    <header class="header" style="background-color:#0AAAA0; color: white;;">
+      <div class="social">
+        <span>Follow Us On : </span>
+        <span class="icn">
+          <a href="https://www.facebook.com/" style="color: #fff; padding:2px;"><i class="fa-brands fa-facebook-f"></i></a>
+        </span>
+        <span class="icn">
+          <a href="https://twitter.com/login" style="color: #fff; padding:2px ;"><i class="fa-brands fa-twitter"></i></a>
+        </span>
+      </div>
+    </header>
   
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-light navDiv">
@@ -76,132 +85,117 @@
 
    
 
-<div class="container">
-    <!-- <div class="be-comment-block">
-        <h1 class="comments-title">Comments (3)</h1>
-        <div class="be-comment">
-            <div class="be-img-comment">	
-                <a href="blog-detail-2.html">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="be-ava-comment">
-                </a>
-            </div>
-            <div class="be-comment-content">
-                
-                    <span class="be-comment-name">
-                        <a href="blog-detail-2.html">Ravi Sah</a>
-                        </span>
-                    <span class="be-comment-time">
-                        <i class="fa fa-clock-o"></i>
-                        May 27, 2015 at 3:14am
-                    </span>
+    <div class="container contact-form">
+      <div class="contact-image">
+          <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+      </div>
+      <form method="post">
+          <h3>NEW POST</h3>
+         <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" value="" />
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="heading" class="form-control" required placeholder="Heading of the Post *" value="" />
+                  </div>
+                  <div class="form-group">
+                      <!-- <input type="text" name="txtPhone" class="form-control" placeholder="How you feel about this post *" value="" /> -->
+                      <label for="">How you feel about this post ?</label>        
+                      <select class="custom-select" id="gender2">
+                        <option selected>Happy</option>
+                        <option value="1">Sad</option>
+                        <option value="2">Frustrated</option>
+                        <option value="2">Regret</option>
+                      </select>   
+                  </div>
 
-                <p class="be-comment-text">
-                    Pellentesque gravida tristique ultrices. 
-                    Sed blandit varius mauris, vel volutpat urna hendrerit id. 
-                    Curabitur rutrum dolor gravida turpis tristique efficitur.
-                </p>
-            </div>
-        </div>
-        <div class="be-comment">
-            <div class="be-img-comment">	
-                <a href="blog-detail-2.html">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="be-ava-comment">
-                </a>
-            </div>
-            <div class="be-comment-content">
-                <span class="be-comment-name">
-                    <a href="blog-detail-2.html">Phoenix, the Creative Studio</a>
-                </span>
-                <span class="be-comment-time">
-                    <i class="fa fa-clock-o"></i>
-                    May 27, 2015 at 3:14am
-                </span>
-                <p class="be-comment-text">
-                    Nunc ornare sed dolor sed mattis. In scelerisque dui a arcu mattis, at maximus eros commodo. Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant. Proin ut ornare lectus, vel eleifend est. Fusce hendrerit dui in turpis tristique blandit.
-                </p>
-            </div>
-        </div>
-        <div class="be-comment">
-            <div class="be-img-comment">	
-                <a href="blog-detail-2.html">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="be-ava-comment">
-                </a>
-            </div>
-            <div class="be-comment-content">
-                <span class="be-comment-name">
-                    <a href="blog-detail-2.html">Cüneyt ŞEN</a>
-                </span>
-                <span class="be-comment-time">
-                    <i class="fa fa-clock-o"></i>
-                    May 27, 2015 at 3:14am
-                </span>
-                <p class="be-comment-text">
-                    Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant
-                </p>
-            </div>
-        </div> -->
-        <form class="form-block">
-            <div class="row">
-                <div class="row1 col-xs-12 col-sm-6">
-                    <div class="form-group fl_icon">
-                        <div class="icon"><i class="fa fa-user"></i></div>
-                        <label for="name" style="font-weight: 700;">Name:</label>
-                        <input class="form-input" type="text" placeholder="Your name">
-                    </div>
+                  <div class="form-group">
+                    <!-- <input type="text" name="txtPhone" class="form-control" placeholder="How you feel about this post *" value="" /> -->
+                    <label for="">Select your Category</label>        
+                    <select class="custom-select" id="gender2">
+                      <option selected>General</option>
+                      <option value="1">Depression</option>
+                      <option value="2">Mental Health</option>
+                      <option value="3">Advice</option>
+                      <option value="4">Anxiety</option>
+                      <option value="5">Pregnancy</option>
+                      <option value="6">LGBTQ+</option>
+                    </select>   
                 </div>
 
-                <div class="dropdown">
-                    <div class="icon"><i class="fa fa-database"></i></div>
-                    <label for="categories" style="font-weight:700;">Category: </label>
-                    <Select name="categories" id="categories">
-                      <option value="General">General</option>
-                      <option value="Depression">Depression</option>
-                      <option value="Advice">Advice</option>
-                      <option value="Anxiety">Anxiety</option>
-                      <option value="Mental Health">Mental Health</option>
-                      <option value="Pregnancy">Pregnancy</option>
-                      <option value="LGBTQ+">LGBTQ+</option>
-                    </Select>
-                </div>
-
-                <div class="row1 col-xs-12 col-md-9">
-                  <div class="form-group fl_icon">
-                      <div class="icon"><i class="fa fa-header"></i></div>
-                      <label for="heading" style="font-weight:700;">Heading:</label>
-                      <input class="form-input" type="text" placeholder="Title of the Post">
+                  <div class="form-group">
+                      <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
                   </div>
               </div>
-
-              <div class="dropdown">
-                <div class="icon"><i class="fa fa-smile-o"></i></div>
-                <label for="reaction" style="font-weight:700;">How you feel ? </label>
-                <Select name="reaction" id="ReactionCategories">
-                  <option value="Strange">Strange</option>
-                  <option value="Sad">Sad</option>
-                  <option value="Depression">Depression</option>
-                  <option value="Happy">Happy</option>
-                  <option value="Pregnancy">Embarassing</option>
-                </Select>
+              <div class="textAreaBox col-md-6">
+                  <div class="form-group">
+                    <textarea name="comment" id="myTextarea" placeholder="Type Here..." rows="6" cols="15"></textarea>
+                  </div>
               </div>
-              
-            </div>
-
-
-            <div class="col-xs-12">									
-              <div class="form-group">
-                  <textarea class="form-input" required="" placeholder="Your text"></textarea>
-              </div>
-            </div>
-
-            
-
-          <a class="btn btn-primary pull-right">Post</a>
-        </form>
-    </div>
+          </div>
+      </form>
 </div>
-    <!-- end of new Post -->
 
 
-
+  <script>
+    tinymce.init({ 
+      selector:'#myTextarea',
+      plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime lists wordcount  charmap quickbars emoticons',
+      // menubar: '',
+      toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | removeformat | pagebreak | charmap emoticons | fullscreen  preview | insertfile image media template link anchor codesample | ltr rtl',
+      // toolbar_sticky: true,
+      autosave_ask_before_unload: true,
+      autosave_interval: '2s',
+      autosave_prefix: '{path}{query}-{id}-',
+      autosave_restore_when_empty: false,
+      autosave_retention: '2m',
+      image_advtab: true,
+      link_list: [
+        { title: 'My page 1', value: 'https://www.codexworld.com' },
+        { title: 'My page 2', value: 'http://www.codexqa.com' }
+      ],
+      image_list: [
+        { title: 'My page 1', value: 'https://www.codexworld.com' },
+        { title: 'My page 2', value: 'http://www.codexqa.com' }
+      ],
+      image_class_list: [
+        { title: 'None', value: '' },
+        { title: 'Some class', value: 'class-name' }
+      ],
+      importcss_append: true,
+      file_picker_callback: (callback, value, meta) => {
+        /* Provide file and text for the link dialog */
+        if (meta.filetype === 'file') {
+          callback('https://www.google.com/logos/google.jpg', { text: 'My text' });
+        }
+    
+        /* Provide image and alt text for the image dialog */
+        if (meta.filetype === 'image') {
+          callback('https://www.google.com/logos/google.jpg', { alt: 'My alt text' });
+        }
+    
+        /* Provide alternative source and posted for the media dialog */
+        if (meta.filetype === 'media') {
+          callback('movie.mp4', { source2: 'alt.ogg', poster: 'https://www.google.com/logos/google.jpg' });
+        }
+      },
+      templates: [
+        { title: 'New Table', description: 'creates a new table', content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>' },
+        { title: 'Starting my story', description: 'A cure for writers block', content: 'Once upon a time...' },
+        { title: 'New list with dates', description: 'New List with dates', content: '<div class="mceTmpl"><span class="cdate">cdate</span><br><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>' }
+      ],
+      template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
+      template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
+      image_caption: true,
+      quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
+      noneditable_class: 'mceNonEditable',
+      toolbar_mode: 'sliding',
+      contextmenu: '',
+      content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }',
+      statusbar:false,
+      height:310,
+  })
+  </script>
 </body>
 </html>

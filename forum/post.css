@@ -1,0 +1,155 @@
+/* ################################
+#########  POST PAGE  ############
+################################## */
+
+
+/* global styling */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+h2{
+    font-size:22px;
+    font-weight: bolder;
+}
+
+
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: end;
+    padding-right: 17px;
+}
+/* end of header */
+
+
+/* end of global styling */
+
+
+
+/* pagination */
+
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.navigate span a{
+    color: black;
+    /* font-size: 17px; */
+}
+
+.navigate a:hover{
+    color:#0AAAA0;
+    font-weight: bolder;
+}
+/* pagination */
+.table-head{
+    display: flex;
+}
+
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color:#0AAAA0;
+    font-weight: bold;
+}
+
+.table-head .status{
+    flex: 5%;
+}
+
+.table-head .subjects{
+    flex: 75%;
+}
+
+.table-head .replies{
+    flex: 10%;
+}
+
+.table-head .last-reply{
+    flex: 20%;
+}
+
+
+/* table body */
+
+.table-row{
+    display: flex;
+}
+
+.table-row .status i{
+    font-size: 20px;
+}
+
+.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+    padding: 5px;
+    margin: 2px;
+    background-color:#66BFBF;
+}
+
+.table-row .status{
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-row .subjects{
+    flex: 75%;
+}
+
+.table-row .subjects a{
+    color:#2c2c2c;
+}
+.table-row .replies{
+    flex: 10%;
+}
+
+.table-row .last-reply{
+    flex: 20%;
+}
+
+/* pagination */
+.pagination{
+    padding: 20px;
+    font-size: 12px;
+}
+
+.pagination a{
+    font-size: 08px;
+    color: black;
+    margin-inline: 2.8px;
+    padding: 5px 10px;
+    border: solid #ccc 0.5px;
+}
+
+.pagination a:hover{
+    opacity: 0.5;
+}
+/* end of pagination */
+
+/* end of table body */
+
+
+
+/* ################################
+###### END OF POST PAGE  #########
+################################## */
+
+

@@ -55,6 +55,7 @@ header{
     list-style-type: none;
     margin-bottom: 0px;
 }
+
 .top-page ul li a{
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
@@ -82,6 +83,7 @@ nav{
     margin-top: 2px;
     background-color: #0AAAA0;
 }
+
 .primary-navigation ul li {
     list-style: none;
     margin: 16px 0 16px 0;
@@ -272,6 +274,21 @@ nav .new-post a:hover{
     padding: 5px;
     border-radius: 5px;
     margin: 4px; 
+    display: flex;
+    justify-content: space-between;
+}
+.subforum-title .subforum-explore-more{
+    padding-top: 10px;
+}
+
+.subforum-title .subforum-explore-more a{
+    letter-spacing:1.1pt;
+    color: #fff;
+    text-decoration: none;
+}
+
+.subforum-title .subforum-explore-more a:hover{
+    text-decoration:underline;
 }
 
 .subforum-title h1{
@@ -283,6 +300,7 @@ nav .new-post a:hover{
     margin-block: 0;
     font-family: "Open Sans", sans-serif;
     margin: 0;
+    font-size: 13px;
     padding-left: 15px;
     line-height: 1.2;
 }
@@ -384,7 +402,6 @@ nav .new-post a:hover{
         padding: 15px;
         display: flex;
         flex-direction: column;
-
     }
     .subforum-row{
         display: grid;
@@ -438,109 +455,184 @@ footer{
 
 
 /* accordian */
-.FAQ-title .heading{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-section {
-    margin: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.transition, ul li i:before, .accordian li i:after, p {
+    transition: all 0.25s ease-in-out;
   }
   
-  .accordion-container{
-    width: 30%;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  .flipIn, ul li, h1 {
+    animation: flipdown 0.5s ease both;
   }
   
-  .accordion-item{
-    background-color:#66BFBF;
-    border-radius: .4rem;
+  .no-select, h2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   
-  .accordion-item hr{
-    border: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  
-  .accordion-link{
-    color: rgba(255,255,255,.8);
-    text-decoration: none;
-    background-color:#0AAAA0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-  }
-  
-  .accordion-link h1{
-    font-weight:870;
-    font-size: 1.26rem;
-  }
-  
-  .accordion-link i{
-    color: #e7d5ff;
-    padding: .5rem;
-    
-  }
-  
-  .accordion-link ul{
-    display:flex;
-    align-items: flex-end;
-    list-style-type: none;
-    margin-left: 25px;
-  }
-  
-  .accordion-link li{
-    font-size: 19px;
-    color: rgba(255, 255, 255, 0.4);
-    padding: 0 0 1px 5px;
-  }
-  
-  .accordion-link div{
-    display: flex;
-  }
-  
-  .accordion-link .ion-md-arrow-down{
-    display: none;
-  }
-  
-  .answer{
-    max-height: 0;
-    overflow: hidden;
+/* the below display is used to center the all div in the class*/
+  /* #faq{
+    box-shadow: 0px 01px 0px 0px #0AAAA0 inset;
+  } */
+  .accordian{
+    min-height: 0;
+    display: inline-block;
     position: relative;
-    background-color:#2c2c2c;
-    transition: max-height 650ms;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fefffa;
+    padding: 30px;
+  }
+  @media (max-width: 550px) {
+    .accordian {
+      box-sizing: border-box;
+      transform: translate(0, 0);
+      max-width: 100%;
+      min-height: 100%;
+      margin: 0;
+      left: 0;
+    }
   }
   
+  .accordian h1,.accordian ul li h2 {
+    color: #030202;
+  }
   
-  
-  .answer p{
-    color: #fff;
-    font-size: 1.18rem;
-    padding: 1rem;
+  .accordian h1 {
     
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 3px;
+    font-weight: 100;
   }
   
-  .accordion-item:target .answer{
-    max-height: 20rem;
-  }
-  
-  .accordion-item:target .accordion-link .ion-md-arrow-forward{
-    display: none
-  }
-  
-  .accordion-item:target .accordion-link .ion-md-arrow-down{
+  .accordian ul li h2 {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 300;
+    letter-spacing: 1px;
     display: block;
+    background-color: #fefffa;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .accordian ul li p {
+    color: rgba(48, 69, 92, 0.8);
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2;
+    padding: 0 2px 0 20px;
+  }
+  
+  .accordian ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+  }
+  .accordian ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-bottom:0.2px solid #66BFBF;
+  }
+  
+  ul li:nth-of-type(1) {       /* this animation applies to all other li (global style)*/
+    animation-delay: 0.5s;
+  }
+  ul li:nth-of-type(2) {
+    animation-delay: 0.75s;
+  }
+  ul li{
+    animation-delay: 0.9s;
+  }
+  ul li:last-of-type {
+    padding-bottom: 0;
+  }
+  .accordian ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+  }
+  .accordian ul li i:before,.accordian ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #0AAAA0;
+    width: 3px;
+    height: 9px;
+  }
+  .accordian ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  .accordian ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+  .accordian ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+  }
+  .accordian ul li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  .accordian ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+  .accordian ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+  
+  @keyframes flipdown {
+    0% {
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+    }
+    5% {
+      opacity: 1;
+    }
+    80% {
+      transform: rotateX(8deg);
+    }
+    83% {
+      transform: rotateX(6deg);
+    }
+    92% {
+      transform: rotateX(-3deg);
+    }
+    100% {
+      transform-origin: top center;
+      transform: rotateX(0deg);
+    }
   }
 
-  .accordion-link :hover{
-    color: black;
-  }
+
+
+
 /* end 0f accordian */
 
 
@@ -564,124 +656,6 @@ footer .right-content{
 
 
 
-
-
-/* ################################
-#########  POST PAGE  ############
-################################## */
-
-
-
-
-/* pagination */
-
-.navigate{
-    margin-block: 20px;
-    font-weight: lighter;
-    font-size: 13px;
-}
-
-.navigate span a{
-    color: black;
-    /* font-size: 17px; */
-}
-
-.navigate a:hover{
-    color:#0AAAA0;
-    font-weight: bolder;
-}
-/* pagination */
-.table-head{
-    display: flex;
-}
-
-.table-head div{
-    padding: 5px;
-    margin: 2px;
-    background-color:#0AAAA0;
-    font-weight: bold;
-}
-
-.table-head .status{
-    flex: 5%;
-}
-
-.table-head .subjects{
-    flex: 75%;
-}
-
-.table-head .replies{
-    flex: 10%;
-}
-
-.table-head .last-reply{
-    flex: 20%;
-}
-
-
-/* table body */
-
-.table-row{
-    display: flex;
-}
-
-.table-row .status i{
-    font-size: 20px;
-}
-
-.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
-    padding: 5px;
-    margin: 2px;
-    background-color:#66BFBF;
-}
-
-.table-row .status{
-    flex: 5%;
-    font-size: 30px;
-    text-align: center;
-}
-
-.table-row .subjects{
-    flex: 75%;
-}
-
-.table-row .subjects a{
-    color:#2c2c2c;
-}
-.table-row .replies{
-    flex: 10%;
-}
-
-.table-row .last-reply{
-    flex: 20%;
-}
-
-/* pagination */
-.pagination{
-    padding: 20px;
-    font-size: 12px;
-}
-
-.pagination a{
-    font-size: 08px;
-    color: black;
-    margin-inline: 2.8px;
-    padding: 5px 10px;
-    border: solid #ccc 0.5px;
-}
-
-.pagination a:hover{
-    opacity: 0.5;
-}
-/* end of pagination */
-
-/* end of table body */
-
-
-
-/* ################################
-###### END OF POST PAGE  #########
-################################## */
 
 
 

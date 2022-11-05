@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+h2{
+    font-size:22px;
+    font-weight: bolder;
+}
+
+
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: end;
+    padding-right: 17px;
+}
+/* end of header */
+
+
+/* end of global styling */
+
+
+
+.top-bar{
+    padding: 15px;
+    margin: 2px;
+    background-color:#0AAAA0;
+    font-weight: bold;
+    border-radius: 05px;
+}
+
+.main{
+    margin: 10px;
+}
+
+.bottom{
+    display: flex;
+    color: grey;
+    font-size: 12px;
+    padding-left: 05px;
+}
+
+ol li{
+    background-color:#66BFBF;
+    border-radius: 05px;
+}
+
+ol{
+    margin: 0;
+    padding-left: 0;
+}
+
+.thread-content{
+    padding: 5px;
+    margin: 0px;
+    background-color:#66BFBF;
+}
+
+.thread-content a p{
+    color:#2c2c2c;
+    font-size: 12px;
+    opacity: 0.9;
+}
+.thread-content a h3{
+    color: black;
+    font-size: 19px;
+}
+
+.thread-content a p{
+    margin-bottom: 0;
+}
+
+
+.timestamp{
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* pagination */
+.pagination{
+    padding: 10px;
+    font-size: 12px;
+}
+
+.pagination a{
+    font-size: 08px;
+    color: black;
+    margin-inline: 2.8px;
+    padding: 5px 10px;
+    border: solid #ccc 0.5px;
+}
+
+.pagination a:hover{
+    opacity: 0.5;
+}
+/* end of pagination */
